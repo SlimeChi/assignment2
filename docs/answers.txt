@@ -1,0 +1,61 @@
+1.) On branch master
+    Your branch is up to date with 'origin/master'.
+
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+    	.idea/
+    	docs/
+
+    nothing added to commit but untracked files present (use "git add" to track)
+
+    PS C:\Users\Camryn\Documents\GitHub\assignment2> mkdir docs
+
+
+        Directory: C:\Users\Camryn\Documents\GitHub\assignment2
+
+
+    Mode                 LastWriteTime         Length Name
+    ----                 -------------         ------ ----
+    d-----        10/24/2024   1:58 PM                docs
+
+    PS C:\Users\Camryn\Documents\GitHub\assignment2> git status > docs/status.txt
+    PS C:\Users\Camryn\Documents\GitHub\assignment2> git add docs/status.txt
+    PS C:\Users\Camryn\Documents\GitHub\assignment2> git commit -m "Added status.txt, docs folder,  with git status output"
+    [master eda6220] Added status.txt, docs folder,  with git status output
+     1 file changed, 0 insertions(+), 0 deletions(-)
+     create mode 100644 docs/status.txt
+    PS C:\Users\Camryn\Documents\GitHub\assignment2> git push
+    Enumerating objects: 5, done.
+    Counting objects: 100% (5/5), done.
+    Delta compression using up to 24 threads
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (4/4), 956 bytes | 956.00 KiB/s, done.
+    Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+    remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+    To https://github.com/SlimeChi/assignment2.git
+       5c4e909..eda6220  master -> master
+
+2.) 8 commits; git log
+3.) October 24th at 13:53:07 2024; git log -1 README.md
+4.) Branches allow for parallel development amongst teams without affecting the main code. Its safer this way, that way
+    only working branches are pushed to master. They also allow for multiple people to work on things at the same time,
+    allowing for easy fetch when something is pushed to the main master.
+5.) git log shows commit history while git status shows how the current cloned repository differs from the main branch,
+    and whether or not its synced, aka the current working tree.
+6.) git log Vehicle.h
+7.) git log --grep="file"
+8.) Inheritance is where one class inherits the properties/methods of another class. Polymorphism is the ability for the
+    different classes to be teated as an instance of the same class. Encapsulation is the practice in which data
+    is bundled based on what it needs to access and restricted otherwise due to it not being accessible to just
+    anything.
+9.) In integration manager workflows, every developer has their own repository they push/pull to. In Dictator and
+    Lieutenants workflows though, the code is pushed to lieutenant repositories, and then to the Dictator repository,
+    who can push it to the blessed repository. Both are similar in that there is checking and verification along the
+    way from development to the main repository though.
+10.) A team of 100 developers would greatly benefit from a Dictator and Lieutenant workflow over a centralisd one as it
+    helps to distribute the responsibilities, as well as verifies everyone's environment is separate. Coding causes
+    bugs. A team of 100 developers will likely cause a lot of them. If they're all working off the same repository,
+    changes will constantly have to be fixed and conflicts remedied. At least in the DL workflow, conflicts brought by
+    code can be handled by lieutenants and the conflicts brought by merging those together can be handled by the
+    dictator. It makes things smoother, better organisation.. There really isn't a reason not to use the DL workflow
+    for larger teams.
