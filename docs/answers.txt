@@ -1,3 +1,7 @@
+10/23/2024 - Date in which I went through the tutorials
+A couple of months ago? Hard to say.
+https://github.com/SlimeChi/assignment2.git
+
 1.) On branch master
     Your branch is up to date with 'origin/master'.
 
